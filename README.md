@@ -1,5 +1,6 @@
 # amusement-arcade-database
 愛知県のゲームセンターのデータベースです。
+[![Image from Gyazo](https://i.gyazo.com/9b003fc7cbb4ad17e0b8889f68b75db3.jpg)](https://gyazo.com/9b003fc7cbb4ad17e0b8889f68b75db3)
 
 ### この作品の使い方
 * 地図上に愛知県にあるゲームセンターの位置をマーカーで表示しています（閉店したゲームセンターは表示されていません）。
