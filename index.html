@@ -11,9 +11,52 @@
   <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
   <!-- data.js -->
   <script src="data.js"></script>
+
+<style>
+  ul {
+  	list-style: none;
+  	display: table;
+  	margin: 0;
+  	padding: 0;
+  }
+  li {
+	display: table-cell;
+	text-align: center;
+  }
+  li:nth-child(n+2) {
+	padding-left: 20px;
+  }
+</style>
+
 </head>
 
 <body>
+<h1>愛知県のゲームセンターマップ</h1>
+<h3>市区町村ごとの店舗数</h3>
+<ul>
+	<li><a>一宮市 2店舗</a></li>
+	<li><a>岡崎市 1店舗</a></li>
+	<li><a>蒲郡市 1店舗</a></li>
+	<li><a>刈谷市 1店舗</a></li>
+	<li><a>春日井市 1店舗</a></li>
+  <li><a>小牧市 2店舗</a></li>
+</ul>
+<ul>
+	<li><a>瀬戸市 1店舗</a></li>
+	<li><a>知多郡 1店舗</a></li>
+	<li><a>東海市 2店舗</a></li>
+	<li><a>日進市 1店舗</a></li>
+	<li><a>半田市 2店舗</a></li>
+  <li><a>尾張旭市 1店舗</a></li>
+</ul>
+<ul>
+	<li><a>豊橋市 2店舗</a></li>
+	<li><a>豊川市 1店舗</a></li>
+	<li><a>豊田市 3店舗</a></li>
+	<li><a>北名古屋市 2店舗</a></li>
+	<li><a>名古屋市 10店舗</a></li>
+  <li><a>中区 1店舗</a></li>
+</ul>
 
   <!-- 地図を表示するブロック要素 -->
   <div id="mymap" style="width:800px;height:600px;"></div>
@@ -39,8 +82,8 @@
         "<br>" + feature.properties.電話番号 +
         "<br>" + feature.properties.営業時間開店 +
         "<br>" + feature.properties.営業時間閉店 +
-        "<br><a href='" + feature.properties.Webサイト + "' target='_blank'>Webサイト</a>" +
-        "<br><a href='" + feature.properties.Twitter  + "' target='_blank'>Twitter</a>" +
+        "<br>" + feature.properties.Webサイト +
+        "<br>" + feature.properties.Twitter +
         "</p>");
       }
     }).addTo(mymap);
